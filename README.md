@@ -1,73 +1,77 @@
-style.css (CSS pour le design)
+index.html//Mercedes.automobil.fr (Page d'accueil)
 
 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercedes automobil- Vente de voitures</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Mercedes automobil</h1>
+            <p>Vente de voitures</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#voitures">Nos Voitures</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#apropos">À propos</a></li>
+            </ul>
+        </nav>
+    </header>
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
-}
+    <section id="accueil">
+        <h2>Bienvenue sur notre site de vente de voitures</h2>
+        <p>Nous vous proposons une large sélection de véhicules de qualité, à des prix compétitifs. Découvrez nos offres ci-dessous !</p>
+    </section>
 
-header {
-    background-color: #2c3e50;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
+    <section id="voitures">
+        <h2>Nos Voitures à Vendre</h2>
+        <div class="car-list">
+            <div class="car-item">
+                <img src="car1.jpg" alt="Voiture 1">
+                <h3>Ford Focus</h3>
+                <p>Année: 2018 | Prix: 15 000 €</p>
+                <p>Excellente voiture, faible kilométrage, idéale pour la ville.</p>
+            </div>
+            <div class="car-item">
+                <img src="car2.jpg" alt="Voiture 2">
+                <h3>Peugeot 208</h3>
+                <p>Année: 2020 | Prix: 18 000 €</p>
+                <p>Compacte et économique, parfaite pour un usage quotidien.</p>
+            </div>
+            <!-- Ajouter d'autres voitures -->
+        </div>
+    </section>
 
-header .logo h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <form action="mailto:Mercedes.auto@accountant.com" method="post" enctype="text/plain">
+            <label for="name">Votre nom :</label>
+            <input type="text" id="name" name="name" required><br>
 
-header nav ul {
-    list-style-type: none;
-    padding: 0;
-}
+            <label for="email">Votre email :</label>
+            <input type="email" id="email" name="email" required><br>
 
-header nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
+            <label for="message">Message :</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
 
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-}
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
 
-section {
-    padding: 40px 20px;
-}
+    <section id="apropos">
+        <h2>À propos de Mercedes automobil</h2>
+        <p>Frederic Savage est un expert en vente de voitures avec plus de 10 ans d'expérience. Nous nous engageons à fournir des véhicules de qualité à des prix compétitifs, avec un service client irréprochable.</p>
+    </section>
 
-#voitures .car-list {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-#voitures .car-item {
-    background-color: #fff;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    width: 250px;
-    text-align: center;
-}
-
-#voitures .car-item img {
-    max-width: 100%;
-    border-radius: 8px;
-}
-
-footer {
-    background-color: #2c3e50;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
+    <footer>
+        <p>&copy; 2025 Mercedes automobil Frédéric Savage - Tous droits réservés</p>
+    </footer>
+</body>
+</html>
